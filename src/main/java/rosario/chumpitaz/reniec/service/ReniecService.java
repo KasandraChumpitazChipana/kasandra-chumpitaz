@@ -1,4 +1,4 @@
-package maria.avila.reniec.service;
+package rosario.chumpitaz.reniec.service;
 
 import lombok.extern.slf4j.Slf4j;
 import rosario.chumpitaz.reniec.dto.apiReniec;
@@ -33,7 +33,7 @@ public class ReniecService {
         return webClient.get()
                 .uri(url)
                 .retrieve()
-                .bodyToMono(apiReniec.class) // ← Usamos el DTO primero
+                .bodyToMono(apiReniec.class)
                 .doOnNext(data -> log.info("Datos obtenidos de SUNAT: {}", data))
                 .map(dto -> {
                     // Mapear manualmente al modelo que guarda en la BD
@@ -45,6 +45,7 @@ public class ReniecService {
                     entity.setDepartamento(dto.getDepartamento());
                     entity.setProvincia(dto.getProvincia());
                     entity.setDistrito(dto.getDistrito());
+                    entity.setEstado("A"); // Establecer estado activo por defecto
                     return entity;
                 })
                 .flatMap(reniecRepository::save)
@@ -72,5 +73,4 @@ public class ReniecService {
                     return reniecRepository.save(data);
                 });
     }
-
 }

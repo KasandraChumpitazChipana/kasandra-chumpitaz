@@ -1,0 +1,6 @@
+rosario/chumpitaz/reniec/repository/ReniecRepository.class
+rosario/chumpitaz/reniec/rest/ReniecRest.class
+rosario/chumpitaz/reniec/config/CorsConfig.class
+rosario/chumpitaz/reniec/service/ReniecService.class
+rosario/chumpitaz/reniec/dto/apiReniec.class
+rosario/chumpitaz/reniec/model/DataReniec.class

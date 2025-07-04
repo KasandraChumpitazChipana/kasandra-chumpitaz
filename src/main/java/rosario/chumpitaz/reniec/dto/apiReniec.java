@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class apiReniec {
-
+    
     private Long Id;
     private String ruc;
     private String razonSocial;

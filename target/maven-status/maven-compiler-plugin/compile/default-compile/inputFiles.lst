@@ -1,0 +1,7 @@
+/workspace/kasandra-chumpitaz/src/main/java/rosario/chumpitaz/reniec/ReniecApplication.java
+/workspace/kasandra-chumpitaz/src/main/java/rosario/chumpitaz/reniec/config/CorsConfig.java
+/workspace/kasandra-chumpitaz/src/main/java/rosario/chumpitaz/reniec/dto/apiReniec.java
+/workspace/kasandra-chumpitaz/src/main/java/rosario/chumpitaz/reniec/model/DataReniec.java
+/workspace/kasandra-chumpitaz/src/main/java/rosario/chumpitaz/reniec/repository/ReniecRepository.java
+/workspace/kasandra-chumpitaz/src/main/java/rosario/chumpitaz/reniec/rest/ReniecRest.java
+/workspace/kasandra-chumpitaz/src/main/java/rosario/chumpitaz/reniec/service/ReniecService.java
